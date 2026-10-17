@@ -1,19 +1,19 @@
  ▐▛███▛█   Claude Code v2.1.302
 ▝▜██████▀  Opus 5.5 · Claude Max
- ▝▝   ▝▝   ~\PROJECTS\Dev-SaaS\LAB\astro-cf-one-prompt-multilingual-site
+ ▝▝   ▝▝   ~\astro-cf-one-prompt-multilingual-site
 
 
-❯ Create a simple site on the latest Astro with the Cloudflare adapter. It      
-                                                                                
-    should be multilingual: en-us, es, pt-br, de. Three pages: home, about,     
-                                                                                
-    contacts with a contact form, with error handling via react-hook-form,      
-                                                                                
-    showing just a "Sent successfully" message after submit through Astro       
-                                                                                
-    Actions, without actually sending anything. It's a site for a company that  
-                                                                                
-    offers AI audits of marketing funnels for local businesses.                 
+❯ Create a simple site on the latest Astro with the Cloudflare adapter. It
+
+    should be multilingual: en-us, es, pt-br, de. Three pages: home, about,
+
+    contacts with a contact form, with error handling via react-hook-form,
+
+    showing just a "Sent successfully" message after submit through Astro
+
+    Actions, without actually sending anything. It's a site for a company that
+
+    offers AI audits of marketing funnels for local businesses.
 
   Ran 1 shell command (ctrl+o to expand)
 
@@ -36,14 +36,14 @@
   a few setup questions upfront.
 
 ● User answered Claude's questions:
-  ⎿  · Which i18n engine should the site use? → @edgekits/astro-i18n 
+  ⎿  · Which i18n engine should the site use? → @edgekits/astro-i18n
      (Recommended)
      · Which locale is the default (the fallback, and the schema for translation
      keys)? → en-us (Recommended)
      · Which optional i18n features do you want? (Leave all unchecked for none.)
      → Flags in switcher, Geo locale detection, Markdown endpoints
-     · Which fields should the contact form have? (It goes through an Astro 
-     Action, renders on /contacts, and sends nothing.) → Audit request 
+     · Which fields should the contact form have? (It goes through an Astro
+     Action, renders on /contacts, and sends nothing.) → Audit request
      (Recommended)
 
 ● Got it: edgekits, en-us default, all three extras, and the audit-request form.
@@ -91,7 +91,7 @@
        5   },
        6   "hero": {
          ",
-       8     "lead": "Plumbline runs an AI audit of every step between a 
+       8     "lead": "Plumbline runs an AI audit of every step between a
          drop off, why, and what to fix first, in plain language.",
       10     "secondary": "What the audit checks"
      … +91 lines (ctrl+o to expand)
@@ -186,7 +186,7 @@
        1 {
        2   "seo": {
        4     "description": "Cuéntanos sobre tu negocio y solicita una au
-         ditoría con IA de tu embudo de marketing. Respondemos en un día 
+         ditoría con IA de tu embudo de marketing. Respondemos en un día
          hábil."
        6   "heading": "Solicitar auditoría",
        7   "lead": "Cuéntanos sobre tu negocio. Respondemos en un día háb
@@ -203,7 +203,7 @@
          emplo.com.",
        6       "INVALID_WEBSITE": "Escribe una dirección web válida, como
        7       "TOO_SHORT": "Escribe al menos 2 caracteres.",
-       8       "MESSAGE_TOO_SHORT": "Escribe al menos 20 caracteres para 
+       8       "MESSAGE_TOO_SHORT": "Escribe al menos 20 caracteres para
        9       "TOO_LONG": "El texto es demasiado largo. Acórtalo e intén
          talo de nuevo.",
          án disponibles en tu idioma y se muestran en inglés.",
@@ -220,7 +220,7 @@
        6   "seo": {
          s locais",
        8     "description": "A Plumbline audita com IA os funis de market
-         ing de negócios locais e mostra onde os clientes desistem entre 
+         ing de negócios locais e mostra onde os clientes desistem entre
        9   },
       10   "nav": {
      … +23 lines (ctrl+o to expand)
@@ -228,7 +228,7 @@
 ● Write(locales\pt-br\home.json)
   ⎿  Wrote 81 lines to locales\pt-br\home.json
        1 {
-       3     "title": "Plumbline: descubra onde seu funil perde clientes 
+       3     "title": "Plumbline: descubra onde seu funil perde clientes
          locais",
           busca no Google e um horário agendado, com uma lista de correçõ
        5   },
@@ -243,7 +243,7 @@
   ⎿  Wrote 46 lines to locales\pt-br\about.json
       1 {
       3     "title": "Sobre a Plumbline",
-        egócios locais com IA e revisão humana, e explica cada achado em 
+        egócios locais com IA e revisão humana, e explica cada achado em
         linguagem simples."
       6   "heading": "Auditamos funis de negócios que vivem de clientes l
       7   "lead": "A maioria dos negócios locais não precisa de mais tráf
@@ -292,7 +292,7 @@
        6   "seo": {
          ",
        8     "description": "Plumbline prüft mit KI die Marketing-Funnels
-          lokaler Unternehmen und zeigt, wo Kunden zwischen Google-Suche 
+          lokaler Unternehmen und zeigt, wo Kunden zwischen Google-Suche
        9   },
       10   "nav": {
      … +22 lines (ctrl+o to expand)
@@ -315,13 +315,13 @@
   ⎿  Wrote 46 lines to locales\de\about.json
       1 {
       3     "title": "Über Plumbline",
-         Unternehmen mit KI und menschlicher Kontrolle und erklärt jedes 
+         Unternehmen mit KI und menschlicher Kontrolle und erklärt jedes
         Ergebnis in klarer Sprache."
       6   "heading": "Wir prüfen Funnels von Unternehmen, die von lokalen
       7   "lead": "Die meisten lokalen Unternehmen brauchen nicht mehr Be
         dem gebuchten Termin.",
       8   "story": [
-        Inhaber wollten immer mehr Anzeigen, und beim genaueren Hinsehen 
+        Inhaber wollten immer mehr Anzeigen, und beim genaueren Hinsehen
         et, Buchungsformulare funktionierten a
      … +57 lines (ctrl+o to expand)
 
@@ -365,10 +365,10 @@
   ⎿  Wrote 19 lines to src\domain\messages\error-codes.ts
        1 // Keys MUST match keys in locales/<locale>/messages.json (error
          s.ui / errors.server).
-       2 
+       2
        4   INTERNAL_SERVER_ERROR: 'INTERNAL_SERVER_ERROR',
        5 } as const
-       6 export type ServerErrorCode = (typeof SERVER_ERROR_CODES)[keyof 
+       6 export type ServerErrorCode = (typeof SERVER_ERROR_CODES)[keyof
          typeof SERVER_ERROR_CODES]
        8 export const UI_ERROR_CODES = {
        9   REQUIRED: 'REQUIRED',
@@ -379,7 +379,7 @@
   ⎿  Wrote 7 lines to src\domain\messages\common-codes.ts
       1 // Keys MUST match keys in locales/<locale>/messages.json (common
         ).
-      2 
+      2
       3 export const COMMON_MESSAGE_CODES = {
       4   PENDING: 'PENDING',
       5   SENT: 'SENT',
@@ -391,7 +391,7 @@
   ⎿  Wrote 5 lines to src\domain\messages\guards.ts
       1 import { ERROR_MESSAGE_CODES, type ErrorMessageCode } from './err
         or-codes'
-      2 
+      2
       3 export function isErrorMessageCode(value: string): value is Error
         MessageCode {
       4   return Object.values(ERROR_MESSAGE_CODES).includes(value as Err
@@ -411,12 +411,12 @@
 ● Write(src\domain\contact\rules.ts)
   ⎿  Wrote 68 lines to src\domain\contact\rules.ts
       1 // The contact form's validation rules, as plain functions that r
-      2 // One source of truth for both sides: the React form calls them 
+      2 // One source of truth for both sides: the React form calls them
         from react-hook-form's
       3 // `validate`, and the server's zod schema (./schema.ts) wraps th
       4 // module is safe to ship to the browser.
       5 import { UI_ERROR_CODES, type UiErrorCode } from '@/domain/messag
-      6 
+      6
       7 export const CONTACT_FIELDS = ['name', 'email', 'business', 'webs
         ite', 'message'] as const
       9 export type ContactValues = Record<ContactField, string>
@@ -428,7 +428,7 @@
          tion()`.
        3 import { z } from 'astro/zod'
        5 import { checkContactField, type ContactField } from './rules'
-       6 
+       6
          t as an empty string, so
        8 // the rules report REQUIRED (not zod's untranslated `invalid_ty
          pe` text).
@@ -440,11 +440,11 @@
 ● Write(src\actions\contact.ts)
   ⎿  Wrote 28 lines to src\actions\contact.ts
        1 import { ActionError, defineAction } from 'astro:actions'
-       2 
+       2
        3 import { LocaleSchema } from '@edgekits/astro-i18n/runtime'
        5 import { ERROR_MESSAGE_CODES, isErrorMessageCode } from '@/domai
          n/messages'
-       6 
+       6
        7 export const contact = {
        9     // FormData on both paths: the no-JS native POST and the Rea
          ct form's submit.
@@ -454,7 +454,7 @@
 ● Write(src\actions\index.ts)
   ⎿  Wrote 3 lines to src\actions\index.ts
       1 import { contact } from './contact'
-      2 
+      2
       3 export const server = { contact }
 
 ● Write(src\ui\forms\native-post.ts)
@@ -465,8 +465,8 @@
          () => Promise<R> }
        4   setActionResult: (actionName: string, actionResult: S) => void
        6 }
-       7 
-       9  * Post/Redirect/Get for a native (no-JS) form post. Success is 
+       7
+       9  * Post/Redirect/Get for a native (no-JS) form post. Success is
          a 303 back to the page at the
          ot submit twice. An error renders
      … +35 lines (ctrl+o to expand)
@@ -475,12 +475,12 @@
   ⎿  Wrote 11 lines to src\middleware.ts
       1 import { getActionContext } from 'astro:actions'
       2 import { defineMiddleware, sequence } from 'astro:middleware'
-      3 
+      3
       4 import { redirectAfterNativePost } from '@/ui/forms/native-post'
-      5 
+      5
         ahead of this file.
       7 const contactFormPost = defineMiddleware((ctx, next) =>
-      8   redirectAfterNativePost(getActionContext(ctx), 'contact.send', 
+      8   redirectAfterNativePost(getActionContext(ctx), 'contact.send',
         'contact', ctx, next),
       9 )
      … +3 lines (ctrl+o to expand)
@@ -488,11 +488,11 @@
 ● Write(src\ui\forms\error-mapper.ts)
   ⎿  Wrote 14 lines to src\ui\forms\error-mapper.ts
        1 type ErrorLike = { message?: string }
-       2 
+       2
          rors: Record<string, string>): string | null {
        4   if (!issue?.message) return null
        5   return tErrors[issue.message] ?? null
-       7 
+       7
        8 /** Resolve raw error CODES to a deduped list of localized messa
          ges (no React, no DOM). */
          ined>, tErrors: Record<string, string>): string[] {
@@ -506,7 +506,7 @@
   ⎿  Wrote 156 lines to src\components\ContactForm.tsx
        1 import { useEffect, useRef, useState } from 'react'
        2 import { useForm } from 'react-hook-form'
-       4 
+       4
        5 import { CONTACT_FIELDS, checkContactField, type ContactField, t
          ype ContactValues } from '@/domain/contact/rules'
          s'
@@ -528,16 +528,16 @@
       5 }
       6 const { code, size = 16 } = Astro.props
       7 ---
-      8 
+      8
       9 {code && <img src={`/flags/${code}.svg`} width={(size * 4) / 3} h
         eight={size} alt="" loading="lazy" decoding="async" />}
 
 ● Write(src\components\seo\SeoHreflangs.astro)
   ⎿  Wrote 26 lines to src\components\seo\SeoHreflangs.astro
       1 ---
-      2 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, replaceLocaleInPath, 
+      2 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, replaceLocaleInPath,
         toIetfTag } from '@edgekits/astro-i18n/runtime'
-      3 
+      3
       4 interface Props {
       6   currentOrigin: string
       7   // The locales this page really exists in. Default: every suppo
@@ -554,7 +554,7 @@
          he i18n middleware uses. */
        5 export function pagePath(locale: string, page: Page): string {
        7 }
-       8 
+       8
        9 /** The `.md` twin of a page (always served in the config's `mar
       10 export function markdownPath(locale: string, page: Page): string
           {
@@ -568,7 +568,7 @@
        5 }
        6 const { class: className } = Astro.props
        7 ---
-       8 
+       8
          " aria-hidden="true">
       10   <path d="M10 0v9" stroke="currentColor" stroke-width="1.5"></p
          ath>
@@ -579,10 +579,10 @@
        1 ---
        2 import LanguageSwitcher from '@edgekits/astro-i18n/components/La
          nguageSwitcher'
-       3 
+       3
        4 import Flag from './Flag.astro'
        6 import { pagePath, type Page } from '@/lib/site'
-       7 
+       7
        8 interface Props {
        9   common: I18n.Schema['common']
       10   page?: Page
@@ -592,10 +592,10 @@
   ⎿  Wrote 31 lines to src\components\Footer.astro
        1 ---
        2 import { fmt } from '@edgekits/astro-i18n/runtime'
-       3 
+       3
        4 import Logo from './Logo.astro'
        5 import { pagePath } from '@/lib/site'
-       6 
+       6
        7 interface Props {
        8   common: I18n.Schema['common']
        9 }
@@ -606,12 +606,12 @@
   ⎿  Wrote 52 lines to src\components\FunnelReport.astro
        1 ---
        2 import { toIetfTag } from '@edgekits/astro-i18n/runtime'
-       3 
+       3
        4 interface Props {
        5   report: I18n.Schema['home']['report']
        7 const { report } = Astro.props
        8 const { uiLocale } = Astro.locals
-       9 
+       9
       10 // The sample clinic's 30-day numbers, one per stage in the copy
          .
      … +45 lines (ctrl+o to expand)
@@ -622,10 +622,10 @@
   ⎿  Wrote 65 lines to src\layouts\BaseLayout.astro
        1 ---
        2 import '@/styles/global.css'
-       3 
+       3
        4 import MissingTranslationBanner from '@edgekits/astro-i18n/compo
          nents/MissingTranslationBanner'
-       6 
+       6
        7 import Footer from '@/components/Footer.astro'
        8 import Header from '@/components/Header.astro'
        9 import SeoHreflangs from '@/components/seo/SeoHreflangs.astro'
@@ -636,10 +636,10 @@
   ⎿  Wrote 73 lines to src\pages\[lang]\index.astro
        1 ---
        2 import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
-       3 
+       3
        4 import FunnelReport from '@/components/FunnelReport.astro'
        5 import BaseLayout from '@/layouts/BaseLayout.astro'
-       7 
+       7
        8 const { uiLocale, translationLocale } = Astro.locals
        9 const { common, messages, home } = await fetchTranslations(trans
          lationLocale, ['common', 'messages', 'home'])
@@ -650,10 +650,10 @@
   ⎿  Wrote 50 lines to src\pages\[lang]\about.astro
       1 ---
       2 import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
-      3 
+      3
       4 import BaseLayout from '@/layouts/BaseLayout.astro'
       5 import { pagePath } from '@/lib/site'
-      6 
+      6
       7 const { uiLocale, translationLocale } = Astro.locals
       8 const { common, messages, about } = await fetchTranslations(trans
         lationLocale, ['common', 'messages', 'about'])
@@ -664,12 +664,12 @@
   ⎿  Wrote 78 lines to src\pages\[lang]\contacts.astro
        1 ---
        2 import { actions, isInputError } from 'astro:actions'
-       4 
+       4
        5 import ContactForm, { type ContactFormText } from '@/components/
          ContactForm'
          /messages'
        7 import BaseLayout from '@/layouts/BaseLayout.astro'
-       8 
+       8
       10 const { common, messages, contact } = await fetchTranslations(tr
          anslationLocale, ['common', 'messages', 'contact'])
      … +76 lines (ctrl+o to expand)
@@ -679,9 +679,9 @@
   ⎿  Wrote 18 lines to src\pages\404.astro
        1 ---
        2 import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
-       3 
+       3
        5 import { pagePath } from '@/lib/site'
-       6 
+       6
        7 // The i18n middleware sets the locale from the URL's first segm
          ent, or the default.
        9 const { common, messages } = await fetchTranslations(translation
@@ -699,7 +699,7 @@
        7 const list = (items: readonly string[]) => items.map((item) => `
          - ${item}`).join('\n')
          i) => `${i + 1}. ${item}`).join('\n')
-       9 
+       9
          : string, locale: string): string {
      … +57 lines (ctrl+o to expand)
 
@@ -707,9 +707,9 @@
   ⎿  Wrote 22 lines to src\pages\[lang]\[page].md.ts
       1 import type { APIRoute } from 'astro'
       2 import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
-      3 
+      3
       5 import { siteOrigin, type Page } from '@/lib/site'
-      6 
+      6
       7 // `/<locale>/index.md` is the home page; the i18n middleware sen
         ds every `.md` URL to the
         h only.
@@ -723,7 +723,7 @@
       2 import { I18N_CONFIG, LANGUAGES, SUPPORTED_LOCALES, fetchTranslat
         ions } from '@edgekits/astro-i18n/runtime'
       4 import { markdownPath, pagePath, siteOrigin } from '@/lib/site'
-      5 
+      5
       6 export const GET: APIRoute = async (context) => {
       7   const origin = siteOrigin(context)
         tLocale
@@ -734,9 +734,9 @@
 ● Write(src\pages\robots.txt.ts)
   ⎿  Wrote 8 lines to src\pages\robots.txt.ts
       1 import type { APIRoute } from 'astro'
-      2 
+      2
       3 import { siteOrigin } from '@/lib/site'
-      4 
+      4
       5 export const GET: APIRoute = (context) => {
       6   const body = ['User-agent: *', 'Allow: /', '', `Sitemap: ${site
         Origin(context)}/sitemap.xml`].join('\n')
@@ -749,11 +749,11 @@
        1 import type { APIRoute } from 'astro'
        2 import { DEFAULT_LOCALE, SUPPORTED_LOCALES, toIetfTag } from '@e
          dgekits/astro-i18n/runtime'
-       3 
+       3
        4 import { PAGES, pagePath, siteOrigin } from '@/lib/site'
        6 export const GET: APIRoute = (context) => {
        7   const origin = siteOrigin(context)
-       8 
+       8
        9   const urls = PAGES.flatMap((page) => {
       10     const alternates = [
      … +23 lines (ctrl+o to expand)
@@ -774,13 +774,13 @@
 ● Update(src\layouts\BaseLayout.astro)
   ⎿  Added 1 line, removed 1 line
       2  import '@/styles/global.css'
-      3  
+      3
       4  import MissingTranslationBanner from '@edgekits/astro-i18n/compo
          nents/MissingTranslationBanner'
-      5 -import { toIetfTag } from '@edgekits/astro-i18n/runtime'        
+      5 -import { toIetfTag } from '@edgekits/astro-i18n/runtime'
       5 +import { I18N_CONFIG, toIetfTag } from '@edgekits/astro-i18n/run
-        +time'                                                           
-      6  
+        +time'
+      6
       7  import Footer from '@/components/Footer.astro'
       8  import Header from '@/components/Header.astro'
 
@@ -790,9 +790,9 @@
       23  const currentOrigin = siteOrigin(Astro)
       24  const canonical = `${currentOrigin}${Astro.url.pathname}`
       25 +const markdownLocale = I18N_CONFIG.markdownLocale ?? I18N_CONFI
-         +G.defaultLocale                                                
+         +G.defaultLocale
       26  ---
-      27  
+      27
       28  <!doctype html>
 
 ● Update(src\layouts\BaseLayout.astro)
@@ -802,9 +802,9 @@
       36      {page && <SeoHreflangs currentLang={uiLocale} currentOrigin
           ={currentOrigin} />}
       37 -    {page && <link rel="alternate" type="text/markdown" href={m
-         -arkdownPath('en-us', page)} />}                                
+         -arkdownPath('en-us', page)} />}
       37 +    {page && <link rel="alternate" type="text/markdown" href={m
-         +arkdownPath(markdownLocale, page)} />}                         
+         +arkdownPath(markdownLocale, page)} />}
       38      <meta property="og:type" content="website" />
       39      <meta property="og:site_name" content={common.brand.name} /
           >
@@ -814,7 +814,7 @@
   ⎿  Wrote 861 lines to src\styles\global.css
        1 /* Plumbline: cool paper, pine ink, and one highlighter yellow f
          or the leaks an auditor marks. */
-       2 
+       2
        3 :root {
        4   --paper: #eef2f0;
        6   --tint: #e2e9e6;
@@ -832,20 +832,20 @@
       613  .prose {
       614    display: grid;
       615    gap: 1.25rem;
-      616 -  max-width: calc(40em + 2 * var(--gutter));                  
-      617 -  margin-inline: 0;                                           
-      616 +  max-width: 38em;                                            
+      616 -  max-width: calc(40em + 2 * var(--gutter));
+      617 -  margin-inline: 0;
+      616 +  max-width: 38em;
       617    font-size: var(--step-1);
       618    line-height: 1.65;
       619  }
-      621 -@media (min-width: 60rem) {                                   
-      622 -  .prose {                                                    
-      623 -    margin-left: auto;                                        
-      624 -    margin-right: max(var(--gutter), calc((100vw - 74rem) / 2 
-          -+ var(--gutter)));                                            
-      625 -  }                                                           
-      626 -}                                                             
-      620  
+      621 -@media (min-width: 60rem) {
+      622 -  .prose {
+      623 -    margin-left: auto;
+      624 -    margin-right: max(var(--gutter), calc((100vw - 74rem) / 2
+          -+ var(--gutter)));
+      625 -  }
+      626 -}
+      620
       621  .principles {
       622    display: grid;
 
@@ -853,15 +853,15 @@
   ⎿  Added 4 lines, removed 2 lines
       14      <p class="lead">{about.lead}</p>
       15    </section>
-      16  
-      17 -  <section class="container prose">                            
-      18 -    {about.story.map((paragraph) => <p>{paragraph}</p>)}       
-      17 +  <section class="container">                                  
-      18 +    <div class="prose">                                        
-      19 +      {about.story.map((paragraph) => <p>{paragraph}</p>)}     
-      20 +    </div>                                                     
+      16
+      17 -  <section class="container prose">
+      18 -    {about.story.map((paragraph) => <p>{paragraph}</p>)}
+      17 +  <section class="container">
+      18 +    <div class="prose">
+      19 +      {about.story.map((paragraph) => <p>{paragraph}</p>)}
+      20 +    </div>
       21    </section>
-      22  
+      22
       23    <section class="section container" aria-labelledby="principle
           s-heading">
 
@@ -894,9 +894,9 @@
       83            shouldFocus = false
       84          }
       85 +        // Only a field the visitor can't see failed (the hidde
-         +n locale): report it on the form.                              
+         +n locale): report it on the form.
       86 +        if (shouldFocus) setFormErrorCode(SERVER_ERROR_CODES.IN
-         +TERNAL_SERVER_ERROR)                                           
+         +TERNAL_SERVER_ERROR)
       87          return
       88        }
       89        setFormErrorCode(isErrorMessageCode(error.message) ? erro
@@ -908,27 +908,27 @@
       15  const sent = Astro.url.searchParams.get('sent') === '1'
       16  const fieldErrors = result?.error && isInputError(result.error)
            ? result.error.fields : undefined
-      17 +// A failure the visitor can't fix in a field (a server error, 
-         +or the hidden locale) is form-level.                           
+      17 +// A failure the visitor can't fix in a field (a server error,
+         +or the hidden locale) is form-level.
       18 +const hasVisibleFieldError = fieldErrors !== undefined && CONTA
-         +CT_FIELDS.some((name) => fieldErrors[name]?.length)            
+         +CT_FIELDS.some((name) => fieldErrors[name]?.length)
       19  const formError =
-      18 -  result?.error && !isInputError(result.error)                 
-      20 +  result?.error && !hasVisibleFieldError                       
+      18 -  result?.error && !isInputError(result.error)
+      20 +  result?.error && !hasVisibleFieldError
       21      ? isErrorMessageCode(result.error.message)
       22        ? result.error.message
       23        : SERVER_ERROR_CODES.INTERNAL_SERVER_ERROR
 ● Update(src\pages\[lang]\contacts.astro)
   ⎿  Added 1 line
       3  import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
-      4  
+      4
       5  import ContactForm, { type ContactFormText } from '@/components/
          ContactForm'
-      6 +import { CONTACT_FIELDS } from '@/domain/contact/rules'         
+      6 +import { CONTACT_FIELDS } from '@/domain/contact/rules'
       7  import { SERVER_ERROR_CODES, isErrorMessageCode } from '@/domain
          /messages'
       8  import BaseLayout from '@/layouts/BaseLayout.astro'
-      9  
+      9
 
   Called claude-in-chrome 3 times (ctrl+o to expand)
 
@@ -974,10 +974,10 @@
       702    display: grid;
       703    gap: 0.4rem;
       704 +  /* Space for the error bar is reserved up front, so an error
-          + doesn't shift the field. */                                  
-      705 +  padding-left: 0.9rem;                                       
-      706 +  margin-left: calc(-0.9rem - 3px);                           
-      707 +  border-left: 3px solid transparent;                         
+          + doesn't shift the field. */
+      705 +  padding-left: 0.9rem;
+      706 +  margin-left: calc(-0.9rem - 3px);
+      707 +  border-left: 3px solid transparent;
       708  }
       709  .field label {
       710    font-weight: 600;
@@ -987,9 +987,9 @@
       743    border-color: var(--focus);
       744  }
       745  .field[data-invalid] {
-      746 -  padding-left: 0.9rem;                                       
-      747 -  border-left: 3px solid var(--danger);                       
-      746 +  border-left-color: var(--danger);                           
+      746 -  padding-left: 0.9rem;
+      747 -  border-left: 3px solid var(--danger);
+      746 +  border-left-color: var(--danger);
       747  }
       748  .field[data-invalid] input,
       749  .field[data-invalid] textarea {
@@ -1041,8 +1041,8 @@
          arketing funnels for local
        4 businesses. Astro 7 on Cloudflare Workers, in four languages: `e
        5 and `de`.
-       6 
-       8 
+       6
+       8
        9 - **Astro 7** with `output: 'server'` and **`@astrojs/cloudflare
          `** (Workers, rendered in workerd).
          TRANSLATIONS` binding), one JSON
@@ -1113,9 +1113,9 @@
   Before deploying
   - Placeholders: replace plumbline-audits.example (the site in astro.config.mjs
     and keyPrefix in edgekits-i18n.config.ts) and the all-zeros KV id in
-    wrangler.jsonc. To get a real id, run npx wrangler kv namespace create 
+    wrangler.jsonc. To get a real id, run npx wrangler kv namespace create
     TRANSLATIONS. I didn't run it because it changes your Cloudflare account.
-  - Deploy with npm run deploy, then push the translations with npm run 
+  - Deploy with npm run deploy, then push the translations with npm run
     i18n:migrate. The README covers the rest.
 
   Things to know
