@@ -1,0 +1,46 @@
+{
+  "seo": {
+    "title": "About Plumbline",
+    "description": "Plumbline audits the marketing funnels of local businesses with AI and human review, and explains every finding in plain language."
+  },
+  "heading": "We audit funnels for businesses that live on local customers.",
+  "lead": "Most local businesses don't need more traffic. They need fewer leaks between the first search and the booked appointment.",
+  "story": [
+    "Plumbline started inside a small marketing agency. Owners kept asking us to run more ads, and when we looked closer, the ads were rarely the problem. Calls went unanswered, booking forms broke on phones, and great reviews sat behind a profile with the wrong opening hours.",
+    "Finding those leaks by hand took days, so we built an AI that follows a customer's path the way a person would: it searches, clicks, calls, fills in forms and compares you with the businesses down the street. A person still reviews every finding, because a wrong recommendation costs you more than no recommendation."
+  ],
+  "principles": {
+    "heading": "How we work",
+    "items": [
+      {
+        "title": "Plain language",
+        "body": "Every finding says what is wrong, what it costs you and what to do, without marketing jargon."
+      },
+      {
+        "title": "Evidence for every finding",
+        "body": "Screenshots, recordings and numbers. If we can't show it, it isn't in the report."
+      },
+      {
+        "title": "Fixes in order",
+        "body": "We rank fixes by impact and effort, so you know what to do this week and what can wait."
+      },
+      {
+        "title": "Nothing to upsell",
+        "body": "We don't sell ads or retainers. The audit is the whole product."
+      }
+    ]
+  },
+  "deliverables": {
+    "heading": "What you get",
+    "items": [
+      "A ranked list of fixes, each with its expected impact and effort",
+      "Screenshots and screen recordings of every issue we found",
+      "A comparison with three competitors near you",
+      "A 30-minute call to go through the findings with you"
+    ]
+  },
+  "cta": {
+    "heading": "Want to see where your own funnel leaks?",
+    "button": "Request an audit"
+  }
+}

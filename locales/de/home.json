@@ -1,0 +1,81 @@
+{
+  "seo": {
+    "title": "Plumbline: sehen, wo Ihr Funnel lokale Kunden verliert",
+    "description": "Ein KI-Audit jedes Schritts zwischen Google-Suche und gebuchtem Termin, mit einer priorisierten Liste von Verbesserungen in klarer Sprache."
+  },
+  "hero": {
+    "heading": "Sehen Sie, wo Ihr Marketing lokale Kunden verliert.",
+    "lead": "Plumbline prüft mit KI jeden Schritt zwischen einer Google-Suche und einem gebuchten Termin. Sie sehen, wo Menschen abspringen, warum, und was Sie zuerst beheben sollten, in klarer Sprache.",
+    "cta": "Audit anfragen",
+    "secondary": "Was das Audit prüft"
+  },
+  "report": {
+    "caption": "Beispiel-Audit: eine Zahnarztpraxis, letzte 30 Tage",
+    "leak": "{percent} gehen hier verloren",
+    "stages": [
+      { "label": "Haben die Praxis bei Google gesehen", "note": "" },
+      { "label": "Haben die Website geöffnet", "note": "Das Google-Profil zeigt alte Öffnungszeiten und keinen Buchungslink." },
+      { "label": "Haben angerufen oder das Formular gesendet", "note": "Das Kontaktformular hat 9 Felder, und der Button ist auf dem Handy abgeschnitten." },
+      { "label": "Haben einen Termin gebucht", "note": "Anrufe nach 17 Uhr landen auf einer vollen Mailbox." }
+    ]
+  },
+  "checks": {
+    "heading": "Was das Audit prüft",
+    "lead": "Wir gehen den Weg, den ein echter Kunde geht, von der ersten Suche bis zum zweiten Besuch.",
+    "items": [
+      {
+        "title": "Gefunden werden",
+        "body": "Ihr Google-Unternehmensprofil, Ihre Platzierung in der Kartensuche für Ihre Leistungen, Bewertungen und Ihre Antworten darauf sowie die Verzeichnisse, die Ihre Kunden wirklich nutzen."
+      },
+      {
+        "title": "Der erste Klick",
+        "body": "Wie schnell Ihre Website auf dem Handy lädt und ob Besucher in fünf Sekunden verstehen, was Sie anbieten und wo."
+      },
+      {
+        "title": "Kontakt aufnehmen",
+        "body": "Anruf-Buttons, Formulare, Chat und Messenger. Wir testen jeden Weg auf echten Geräten und messen, wie lange eine Antwort dauert."
+      },
+      {
+        "title": "Buchen",
+        "body": "Wo der Buchungsablauf zu viel verlangt, Preise versteckt oder in einer Sackgasse endet."
+      },
+      {
+        "title": "Wiederkommen",
+        "body": "Erinnerungen, Nachfassen und Bitten um Bewertungen, die aus einem ersten Besuch Stammkundschaft machen."
+      }
+    ]
+  },
+  "process": {
+    "heading": "So funktioniert es",
+    "steps": [
+      {
+        "title": "Erzählen Sie uns von Ihrem Unternehmen",
+        "body": "Schicken Sie uns Ihre Website, Ihr Google-Profil und die Leistungen, die Sie öfter verkaufen möchten. Das dauert fünf Minuten."
+      },
+      {
+        "title": "Wir führen das Audit durch",
+        "body": "Unsere KI prüft Hunderte Signale in Ihrem gesamten Funnel. Ein Mensch kontrolliert jedes Ergebnis, bevor es bei Ihnen ankommt."
+      },
+      {
+        "title": "Sie erhalten eine priorisierte Liste",
+        "body": "Innerhalb von fünf Werktagen: jede Schwachstelle mit Belegen, Verbesserungen nach Wirkung und Aufwand sortiert, und ein 30-minütiges Gespräch, um alles durchzugehen."
+      }
+    ]
+  },
+  "audience": {
+    "heading": "Gemacht für Unternehmen, die ihre Nachbarschaft bedienen",
+    "items": [
+      "Zahnarzt- und Arztpraxen",
+      "Installateure und Elektriker",
+      "Friseure und Barbershops",
+      "Fitnessstudios und Kursräume",
+      "Restaurants und Cafés",
+      "Kanzleien und Steuerbüros"
+    ]
+  },
+  "closing": {
+    "heading": "Ein Audit. Eine klare Liste. Kein Abo.",
+    "body": "Der Bericht gehört Ihnen. Setzen Sie ihn selbst um oder geben Sie ihn an Ihr Team oder Ihre Agentur weiter.",
+    "cta": "Audit anfragen"
+  }
+}

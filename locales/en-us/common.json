@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "name": "Plumbline",
+    "tagline": "AI funnel audits for local businesses"
+  },
+  "seo": {
+    "title": "Plumbline: AI funnel audits for local businesses",
+    "description": "Plumbline runs AI audits of the marketing funnels of local businesses and shows where customers drop off between a Google search and a booked appointment."
+  },
+  "nav": {
+    "label": "Main",
+    "skip": "Skip to content",
+    "home": "Home",
+    "about": "About",
+    "contacts": "Contacts",
+    "cta": "Request an audit"
+  },
+  "footer": {
+    "note": "We audit how local customers find you, get in touch and book.",
+    "rights": "© {year} Plumbline. All rights reserved.",
+    "llms": "Plain-text version for AI assistants"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "This address doesn't match any page on the site. Check the link, or start again from the home page.",
+    "back": "Go to the home page"
+  }
+}

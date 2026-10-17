@@ -1,0 +1,81 @@
+---
+import { actions, isInputError } from 'astro:actions'
+import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
+
+import ContactForm, { type ContactFormText } from '@/components/ContactForm'
+import { CONTACT_FIELDS } from '@/domain/contact/rules'
+import { SERVER_ERROR_CODES, isErrorMessageCode } from '@/domain/messages'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+
+const { uiLocale, translationLocale } = Astro.locals
+const { common, messages, contact } = await fetchTranslations(translationLocale, ['common', 'messages', 'contact'])
+
+// The no-JS path: with JS the island submits by RPC and none of this is set. Without JS the
+// native POST lands here: errors come from the action result, success from the 303's `?sent=1`.
+const result = Astro.getActionResult(actions.contact.send)
+const sent = Astro.url.searchParams.get('sent') === '1'
+const fieldErrors = result?.error && isInputError(result.error) ? result.error.fields : undefined
+// A failure the visitor can't fix in a field (a server error, or the hidden locale) is form-level.
+const hasVisibleFieldError = fieldErrors !== undefined && CONTACT_FIELDS.some((name) => fieldErrors[name]?.length)
+const formError =
+  result?.error && !hasVisibleFieldError
+    ? isErrorMessageCode(result.error.message)
+      ? result.error.message
+      : SERVER_ERROR_CODES.INTERNAL_SERVER_ERROR
+    : undefined
+
+const text: ContactFormText = {
+  fields: contact.fields,
+  hints: contact.hints,
+  optional: contact.optional,
+  submit: contact.submit,
+  pending: messages.common.PENDING,
+  sent: messages.common.SENT,
+  serverError: messages.errors.server.INTERNAL_SERVER_ERROR,
+}
+---
+
+<BaseLayout title={contact.seo.title} description={contact.seo.description} common={common} messages={messages} page="contacts">
+  <section class="page-head container">
+    <h1>{contact.heading}</h1>
+    <p class="lead">{contact.lead}</p>
+  </section>
+
+  <div class="container contact-layout">
+    <div id="contact" class="contact-panel">
+      <ContactForm
+        client:load
+        locale={uiLocale}
+        action={`${actions.contact.send}#contact`}
+        text={text}
+        tErrors={messages.errors.ui}
+        sent={sent}
+        fieldErrors={fieldErrors}
+        formError={formError}
+      />
+    </div>
+
+    <aside class="contact-aside">
+      <h2>{contact.aside.heading}</h2>
+      <dl class="details">
+        <div>
+          <dt>{contact.aside.emailLabel}</dt>
+          <dd><a href={`mailto:${contact.aside.email}`}>{contact.aside.email}</a></dd>
+        </div>
+        <div>
+          <dt>{contact.aside.hoursLabel}</dt>
+          <dd>{contact.aside.hours}</dd>
+        </div>
+        <div>
+          <dt>{contact.aside.replyLabel}</dt>
+          <dd>{contact.aside.reply}</dd>
+        </div>
+      </dl>
+
+      <h2>{contact.next.heading}</h2>
+      <ol class="next-steps">
+        {contact.next.steps.map((step) => <li>{step}</li>)}
+      </ol>
+    </aside>
+  </div>
+</BaseLayout>

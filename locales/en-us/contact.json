@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "Request an audit | Plumbline",
+    "description": "Tell us about your business and request an AI audit of your marketing funnel. We reply within one business day."
+  },
+  "heading": "Request an audit",
+  "lead": "Tell us about your business. We reply within one business day with a few questions and a fixed quote.",
+  "fields": {
+    "name": "Your name",
+    "email": "Email",
+    "business": "Business name",
+    "website": "Website or Google profile",
+    "message": "What would you like to improve?"
+  },
+  "hints": {
+    "website": "A link or a domain, like yourbusiness.com.",
+    "message": "For example: more booked appointments, fewer no-shows, more calls from the map."
+  },
+  "optional": "optional",
+  "submit": "Send request",
+  "aside": {
+    "heading": "Other ways to reach us",
+    "emailLabel": "Email",
+    "email": "hello@plumbline-audits.example",
+    "hoursLabel": "Hours",
+    "hours": "Monday to Friday, 9:00 to 18:00",
+    "replyLabel": "Reply time",
+    "reply": "Within one business day"
+  },
+  "next": {
+    "heading": "What happens next",
+    "steps": [
+      "We read your request and look at your website and Google profile.",
+      "We send you a few questions and a fixed quote.",
+      "Once you confirm, your audit arrives within five business days."
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "name": "Plumbline",
+    "tagline": "KI-Funnel-Audits für lokale Unternehmen"
+  },
+  "seo": {
+    "title": "Plumbline: KI-Funnel-Audits für lokale Unternehmen",
+    "description": "Plumbline prüft mit KI die Marketing-Funnels lokaler Unternehmen und zeigt, wo Kunden zwischen Google-Suche und gebuchtem Termin abspringen."
+  },
+  "nav": {
+    "label": "Hauptmenü",
+    "skip": "Zum Inhalt springen",
+    "home": "Start",
+    "about": "Über uns",
+    "contacts": "Kontakt",
+    "cta": "Audit anfragen"
+  },
+  "footer": {
+    "note": "Wir prüfen, wie Kunden aus Ihrer Umgebung Sie finden, kontaktieren und buchen.",
+    "rights": "© {year} Plumbline. Alle Rechte vorbehalten.",
+    "llms": "Textversion für KI-Assistenten"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "message": "Unter dieser Adresse gibt es keine Seite. Prüfen Sie den Link oder starten Sie auf der Startseite neu.",
+    "back": "Zur Startseite"
+  }
+}

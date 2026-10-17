@@ -1,0 +1,52 @@
+---
+import { toIetfTag } from '@edgekits/astro-i18n/runtime'
+
+interface Props {
+  report: I18n.Schema['home']['report']
+}
+const { report } = Astro.props
+const { uiLocale } = Astro.locals
+
+// The sample clinic's 30-day numbers, one per stage in the copy.
+const COUNTS = [4200, 610, 74, 31]
+
+const tag = toIetfTag(uiLocale)
+const number = new Intl.NumberFormat(tag)
+const percent = new Intl.NumberFormat(tag, { style: 'percent', maximumFractionDigits: 0 })
+const top = COUNTS[0] ?? 1
+
+const stages = report.stages.map((stage, i) => {
+  const count = COUNTS[i] ?? 0
+  const previous = COUNTS[i - 1]
+  return {
+    ...stage,
+    count: number.format(count),
+    // Square-root scale: the last stages stay visible next to the first one.
+    width: `${(Math.sqrt(count / top) * 100).toFixed(1)}%`,
+    lost: previous ? report.leak.replace('{percent}', percent.format(1 - count / previous)) : null,
+  }
+})
+---
+
+<figure class="report">
+  <figcaption class="report-caption">{report.caption}</figcaption>
+  <ol class="report-stages">
+    {
+      stages.map((stage, i) => (
+        <li class="stage" style={`--w: ${stage.width}; --i: ${i}`}>
+          {stage.lost && (
+            <p class="leak">
+              <mark>{stage.lost}</mark>
+              {stage.note && <span>{stage.note}</span>}
+            </p>
+          )}
+          <div class="stage-row">
+            <span class="stage-label">{stage.label}</span>
+            <span class="stage-count">{stage.count}</span>
+          </div>
+          <div class="bar" aria-hidden="true" />
+        </li>
+      ))
+    }
+  </ol>
+</figure>

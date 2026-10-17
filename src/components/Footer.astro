@@ -1,0 +1,31 @@
+---
+import { fmt } from '@edgekits/astro-i18n/runtime'
+
+import Logo from './Logo.astro'
+import { pagePath } from '@/lib/site'
+
+interface Props {
+  common: I18n.Schema['common']
+}
+const { common } = Astro.props
+const { uiLocale } = Astro.locals
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href={pagePath(uiLocale, 'home')}>
+        <Logo class="brand-mark" />
+        <span>{common.brand.name}</span>
+      </a>
+      <p>{common.footer.note}</p>
+    </div>
+    <nav class="footer-nav" aria-label={common.brand.name}>
+      <a href={pagePath(uiLocale, 'home')}>{common.nav.home}</a>
+      <a href={pagePath(uiLocale, 'about')}>{common.nav.about}</a>
+      <a href={pagePath(uiLocale, 'contacts')}>{common.nav.contacts}</a>
+      <a href="/llms.txt">{common.footer.llms}</a>
+    </nav>
+    <p class="footer-rights" set:html={fmt(common.footer.rights, { year: new Date().getFullYear() })} />
+  </div>
+</footer>

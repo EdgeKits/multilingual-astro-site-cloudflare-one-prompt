@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "name": "Plumbline",
+    "tagline": "Auditorías de embudos con IA para negocios locales"
+  },
+  "seo": {
+    "title": "Plumbline: auditorías de embudos con IA para negocios locales",
+    "description": "Plumbline audita con IA los embudos de marketing de negocios locales y muestra dónde se pierden clientes entre una búsqueda en Google y una cita reservada."
+  },
+  "nav": {
+    "label": "Principal",
+    "skip": "Saltar al contenido",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "contacts": "Contacto",
+    "cta": "Solicitar auditoría"
+  },
+  "footer": {
+    "note": "Auditamos cómo los clientes de tu zona te encuentran, te contactan y reservan.",
+    "rights": "© {year} Plumbline. Todos los derechos reservados.",
+    "llms": "Versión en texto plano para asistentes de IA"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "message": "Esta dirección no corresponde a ninguna página del sitio. Revisa el enlace o vuelve a empezar desde la página de inicio.",
+    "back": "Ir a la página de inicio"
+  }
+}

@@ -1,0 +1,18 @@
+---
+import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
+
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { pagePath } from '@/lib/site'
+
+// The i18n middleware sets the locale from the URL's first segment, or the default.
+const { uiLocale, translationLocale } = Astro.locals
+const { common, messages } = await fetchTranslations(translationLocale, ['common', 'messages'])
+---
+
+<BaseLayout title={common.notFound.title} description={common.seo.description} common={common} messages={messages}>
+  <section class="page-head container not-found">
+    <h1>{common.notFound.title}</h1>
+    <p class="lead">{common.notFound.message}</p>
+    <a class="button" href={pagePath(uiLocale, 'home')}>{common.notFound.back}</a>
+  </section>
+</BaseLayout>

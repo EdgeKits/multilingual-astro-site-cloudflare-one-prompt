@@ -1,0 +1,52 @@
+---
+import LanguageSwitcher from '@edgekits/astro-i18n/components/LanguageSwitcher'
+
+import Flag from './Flag.astro'
+import Logo from './Logo.astro'
+import { pagePath, type Page } from '@/lib/site'
+
+interface Props {
+  common: I18n.Schema['common']
+  page?: Page
+}
+const { common, page } = Astro.props
+const { uiLocale } = Astro.locals
+
+const links: { page: Page; label: string }[] = [
+  { page: 'home', label: common.nav.home },
+  { page: 'about', label: common.nav.about },
+  { page: 'contacts', label: common.nav.contacts },
+]
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href={pagePath(uiLocale, 'home')}>
+      <Logo class="brand-mark" />
+      <span>{common.brand.name}</span>
+    </a>
+    <nav class="site-nav" aria-label={common.nav.label}>
+      <ul>
+        {
+          links.map((link) => (
+            <li>
+              <a href={pagePath(uiLocale, link.page)} aria-current={link.page === page ? 'page' : undefined}>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <LanguageSwitcher flag={Flag} />
+      {
+        page !== 'contacts' && (
+          <a class="button button-small header-cta" href={pagePath(uiLocale, 'contacts')}>
+            {common.nav.cta}
+          </a>
+        )
+      }
+    </div>
+  </div>
+</header>

@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "name": "Plumbline",
+    "tagline": "Auditorias de funil com IA para negócios locais"
+  },
+  "seo": {
+    "title": "Plumbline: auditorias de funil com IA para negócios locais",
+    "description": "A Plumbline audita com IA os funis de marketing de negócios locais e mostra onde os clientes desistem entre uma busca no Google e um horário agendado."
+  },
+  "nav": {
+    "label": "Principal",
+    "skip": "Pular para o conteúdo",
+    "home": "Início",
+    "about": "Sobre",
+    "contacts": "Contato",
+    "cta": "Pedir uma auditoria"
+  },
+  "footer": {
+    "note": "Auditamos como os clientes da sua região encontram você, entram em contato e agendam.",
+    "rights": "© {year} Plumbline. Todos os direitos reservados.",
+    "llms": "Versão em texto simples para assistentes de IA"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "message": "Este endereço não corresponde a nenhuma página do site. Confira o link ou comece de novo pela página inicial.",
+    "back": "Ir para a página inicial"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "Solicitar auditoría | Plumbline",
+    "description": "Cuéntanos sobre tu negocio y solicita una auditoría con IA de tu embudo de marketing. Respondemos en un día hábil."
+  },
+  "heading": "Solicitar auditoría",
+  "lead": "Cuéntanos sobre tu negocio. Respondemos en un día hábil con algunas preguntas y un presupuesto cerrado.",
+  "fields": {
+    "name": "Tu nombre",
+    "email": "Correo electrónico",
+    "business": "Nombre del negocio",
+    "website": "Web o perfil de Google",
+    "message": "¿Qué te gustaría mejorar?"
+  },
+  "hints": {
+    "website": "Un enlace o un dominio, como tunegocio.com.",
+    "message": "Por ejemplo: más citas reservadas, menos ausencias, más llamadas desde el mapa."
+  },
+  "optional": "opcional",
+  "submit": "Enviar solicitud",
+  "aside": {
+    "heading": "Otras formas de contactarnos",
+    "emailLabel": "Correo",
+    "email": "hello@plumbline-audits.example",
+    "hoursLabel": "Horario",
+    "hours": "De lunes a viernes, de 9:00 a 18:00",
+    "replyLabel": "Respuesta",
+    "reply": "En un día hábil"
+  },
+  "next": {
+    "heading": "Qué pasa después",
+    "steps": [
+      "Leemos tu solicitud y revisamos tu web y tu perfil de Google.",
+      "Te enviamos algunas preguntas y un presupuesto cerrado.",
+      "Cuando confirmas, recibes tu auditoría en cinco días hábiles."
+    ]
+  }
+}

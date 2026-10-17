@@ -1,0 +1,81 @@
+{
+  "seo": {
+    "title": "Plumbline: find where your funnel loses local customers",
+    "description": "An AI audit of every step between a Google search and a booked appointment, with a ranked list of fixes in plain language."
+  },
+  "hero": {
+    "heading": "Find where your marketing loses local customers.",
+    "lead": "Plumbline runs an AI audit of every step between a search on Google and a booked appointment. You see where people drop off, why, and what to fix first, in plain language.",
+    "cta": "Request an audit",
+    "secondary": "What the audit checks"
+  },
+  "report": {
+    "caption": "Sample audit: a family dental clinic, last 30 days",
+    "leak": "{percent} lost here",
+    "stages": [
+      { "label": "Saw the clinic on Google", "note": "" },
+      { "label": "Opened the website", "note": "The Google profile shows old opening hours and no booking link." },
+      { "label": "Called or sent the form", "note": "The contact form has 9 fields, and its button is cut off on phones." },
+      { "label": "Booked a visit", "note": "Calls after 5 pm go to a voicemail box that is full." }
+    ]
+  },
+  "checks": {
+    "heading": "What the audit checks",
+    "lead": "We follow the path a real customer takes, from the first search to the second visit.",
+    "items": [
+      {
+        "title": "Being found",
+        "body": "Your Google Business Profile, map rankings for the services you sell, reviews and how you answer them, and the directories your customers actually use."
+      },
+      {
+        "title": "The first click",
+        "body": "How fast your site loads on a phone, and whether a visitor understands what you offer and where within five seconds."
+      },
+      {
+        "title": "Getting in touch",
+        "body": "Call buttons, forms, chat and messaging. We test each one on real devices and time how long a reply takes."
+      },
+      {
+        "title": "Booking",
+        "body": "Where the booking flow asks for too much, hides prices or leads to a dead end."
+      },
+      {
+        "title": "Coming back",
+        "body": "Reminders, follow-ups and review requests that turn a first visit into a regular customer."
+      }
+    ]
+  },
+  "process": {
+    "heading": "How it works",
+    "steps": [
+      {
+        "title": "Tell us about your business",
+        "body": "Send your website, your Google profile and the services you want more of. It takes five minutes."
+      },
+      {
+        "title": "We run the audit",
+        "body": "Our AI checks hundreds of signals across your funnel. A person reviews every finding before it reaches you."
+      },
+      {
+        "title": "You get a ranked list of fixes",
+        "body": "Within five business days: every leak with evidence, fixes ordered by impact and effort, and a 30-minute call to go through them."
+      }
+    ]
+  },
+  "audience": {
+    "heading": "Made for businesses that serve their neighborhood",
+    "items": [
+      "Dental and medical clinics",
+      "Plumbers and electricians",
+      "Salons and barbershops",
+      "Gyms and studios",
+      "Restaurants and cafés",
+      "Law and accounting offices"
+    ]
+  },
+  "closing": {
+    "heading": "One audit. A clear list of fixes. No retainer.",
+    "body": "The report is yours. Fix things yourself, or hand it to your team or your agency.",
+    "cta": "Request an audit"
+  }
+}

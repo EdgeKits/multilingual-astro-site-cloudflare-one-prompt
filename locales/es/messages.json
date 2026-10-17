@@ -1,0 +1,21 @@
+{
+  "errors": {
+    "ui": {
+      "REQUIRED": "Este campo es obligatorio.",
+      "INVALID_EMAIL": "Escribe un correo válido, como nombre@ejemplo.com.",
+      "INVALID_WEBSITE": "Escribe una dirección web válida, como tunegocio.com.",
+      "TOO_SHORT": "Escribe al menos 2 caracteres.",
+      "MESSAGE_TOO_SHORT": "Escribe al menos 20 caracteres para que sepamos por dónde empezar.",
+      "TOO_LONG": "El texto es demasiado largo. Acórtalo e inténtalo de nuevo.",
+      "MISSING_TRANSLATED_UI": "Partes de esta página aún no están disponibles en tu idioma y se muestran en inglés.",
+      "MISSING_TRANSLATED_CONTENT": "Esta página aún no está disponible en tu idioma y se muestra en inglés."
+    },
+    "server": {
+      "INTERNAL_SERVER_ERROR": "La solicitud no se envió. Comprueba tu conexión y vuelve a enviarla."
+    }
+  },
+  "common": {
+    "PENDING": "Enviando",
+    "SENT": "Enviado correctamente"
+  }
+}

@@ -1,0 +1,52 @@
+---
+import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
+
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { pagePath } from '@/lib/site'
+
+const { uiLocale, translationLocale } = Astro.locals
+const { common, messages, about } = await fetchTranslations(translationLocale, ['common', 'messages', 'about'])
+---
+
+<BaseLayout title={about.seo.title} description={about.seo.description} common={common} messages={messages} page="about">
+  <section class="page-head container">
+    <h1>{about.heading}</h1>
+    <p class="lead">{about.lead}</p>
+  </section>
+
+  <section class="container">
+    <div class="prose">
+      {about.story.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="principles-heading">
+    <h2 id="principles-heading">{about.principles.heading}</h2>
+    <dl class="principles">
+      {
+        about.principles.items.map((item) => (
+          <div>
+            <dt>{item.title}</dt>
+            <dd>{item.body}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+
+  <section class="section section-tinted" aria-labelledby="deliverables-heading">
+    <div class="container">
+      <h2 id="deliverables-heading">{about.deliverables.heading}</h2>
+      <ul class="checklist">
+        {about.deliverables.items.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="about-cta-heading">
+    <div class="container closing-inner">
+      <h2 id="about-cta-heading">{about.cta.heading}</h2>
+      <a class="button button-inverse" href={pagePath(uiLocale, 'contacts')}>{about.cta.button}</a>
+    </div>
+  </section>
+</BaseLayout>

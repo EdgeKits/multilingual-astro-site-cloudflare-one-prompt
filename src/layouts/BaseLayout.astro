@@ -1,0 +1,66 @@
+---
+import '@/styles/global.css'
+
+import MissingTranslationBanner from '@edgekits/astro-i18n/components/MissingTranslationBanner'
+import { I18N_CONFIG, toIetfTag } from '@edgekits/astro-i18n/runtime'
+
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import SeoHreflangs from '@/components/seo/SeoHreflangs.astro'
+import { markdownPath, siteOrigin, type Page } from '@/lib/site'
+
+interface Props {
+  title: string
+  description: string
+  common: I18n.Schema['common']
+  messages: I18n.Schema['messages']
+  page?: Page
+}
+
+const { title, description, common, messages, page } = Astro.props
+const { uiLocale } = Astro.locals
+const lang = toIetfTag(uiLocale)
+const currentOrigin = siteOrigin(Astro)
+const canonical = `${currentOrigin}${Astro.url.pathname}`
+const markdownLocale = I18N_CONFIG.markdownLocale ?? I18N_CONFIG.defaultLocale
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {page && <SeoHreflangs currentLang={uiLocale} currentOrigin={currentOrigin} />}
+    {page && <link rel="alternate" type="text/markdown" href={markdownPath(markdownLocale, page)} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={common.brand.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang.replace('-', '_')} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#eef2f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1815" media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{common.nav.skip}</a>
+    <Header common={common} page={page} />
+    <MissingTranslationBanner
+      texts={{ content: messages.errors.ui.MISSING_TRANSLATED_CONTENT, ui: messages.errors.ui.MISSING_TRANSLATED_UI }}
+      classes={{ root: 'translation-banner' }}
+    />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer common={common} />
+  </body>
+</html>

@@ -1,0 +1,73 @@
+---
+import { fetchTranslations } from '@edgekits/astro-i18n/runtime'
+
+import FunnelReport from '@/components/FunnelReport.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { pagePath } from '@/lib/site'
+
+const { uiLocale, translationLocale } = Astro.locals
+const { common, messages, home } = await fetchTranslations(translationLocale, ['common', 'messages', 'home'])
+const contactsHref = pagePath(uiLocale, 'contacts')
+---
+
+<BaseLayout title={home.seo.title} description={home.seo.description} common={common} messages={messages} page="home">
+  <section class="hero container">
+    <div class="hero-copy">
+      <h1>{home.hero.heading}</h1>
+      <p class="lead">{home.hero.lead}</p>
+      <div class="actions">
+        <a class="button" href={contactsHref}>{home.hero.cta}</a>
+        <a class="link-quiet" href="#checks">{home.hero.secondary}</a>
+      </div>
+    </div>
+    <FunnelReport report={home.report} />
+  </section>
+
+  <section id="checks" class="section container split" aria-labelledby="checks-heading">
+    <div class="split-head">
+      <h2 id="checks-heading">{home.checks.heading}</h2>
+      <p>{home.checks.lead}</p>
+    </div>
+    <dl class="check-list">
+      {
+        home.checks.items.map((item) => (
+          <div class="check">
+            <dt>{item.title}</dt>
+            <dd>{item.body}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+
+  <section class="section section-tinted" aria-labelledby="process-heading">
+    <div class="container">
+      <h2 id="process-heading">{home.process.heading}</h2>
+      <ol class="steps">
+        {
+          home.process.steps.map((step) => (
+            <li>
+              <h3>{step.title}</h3>
+              <p>{step.body}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="audience-heading">
+    <h2 id="audience-heading">{home.audience.heading}</h2>
+    <ul class="tags">
+      {home.audience.items.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-heading">
+    <div class="container closing-inner">
+      <h2 id="closing-heading">{home.closing.heading}</h2>
+      <p>{home.closing.body}</p>
+      <a class="button button-inverse" href={contactsHref}>{home.closing.cta}</a>
+    </div>
+  </section>
+</BaseLayout>

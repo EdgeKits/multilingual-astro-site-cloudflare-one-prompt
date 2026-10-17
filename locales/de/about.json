@@ -1,0 +1,46 @@
+{
+  "seo": {
+    "title": "Über Plumbline",
+    "description": "Plumbline prüft die Marketing-Funnels lokaler Unternehmen mit KI und menschlicher Kontrolle und erklärt jedes Ergebnis in klarer Sprache."
+  },
+  "heading": "Wir prüfen Funnels von Unternehmen, die von lokalen Kunden leben.",
+  "lead": "Die meisten lokalen Unternehmen brauchen nicht mehr Besucher. Sie brauchen weniger Lecks zwischen der ersten Suche und dem gebuchten Termin.",
+  "story": [
+    "Plumbline ist in einer kleinen Marketingagentur entstanden. Inhaber wollten immer mehr Anzeigen, und beim genaueren Hinsehen waren die Anzeigen selten das Problem. Anrufe blieben unbeantwortet, Buchungsformulare funktionierten auf dem Handy nicht, und gute Bewertungen standen in einem Profil mit falschen Öffnungszeiten.",
+    "Diese Lecks von Hand zu finden dauerte Tage. Also haben wir eine KI gebaut, die den Weg eines Kunden so geht, wie es ein Mensch tun würde: Sie sucht, klickt, ruft an, füllt Formulare aus und vergleicht Sie mit den Unternehmen in Ihrer Straße. Jedes Ergebnis wird weiterhin von einem Menschen geprüft, denn eine falsche Empfehlung kostet Sie mehr als gar keine."
+  ],
+  "principles": {
+    "heading": "Wie wir arbeiten",
+    "items": [
+      {
+        "title": "Klare Sprache",
+        "body": "Jedes Ergebnis sagt, was nicht stimmt, was es Sie kostet und was zu tun ist, ohne Marketing-Jargon."
+      },
+      {
+        "title": "Belege für jedes Ergebnis",
+        "body": "Screenshots, Aufnahmen und Zahlen. Was wir nicht zeigen können, steht nicht im Bericht."
+      },
+      {
+        "title": "Verbesserungen in Reihenfolge",
+        "body": "Wir sortieren nach Wirkung und Aufwand, damit Sie wissen, was diese Woche dran ist und was warten kann."
+      },
+      {
+        "title": "Nichts zum Nachverkaufen",
+        "body": "Wir verkaufen keine Anzeigen und keine Abos. Das Audit ist das ganze Produkt."
+      }
+    ]
+  },
+  "deliverables": {
+    "heading": "Was Sie bekommen",
+    "items": [
+      "Eine priorisierte Liste von Verbesserungen, jeweils mit erwarteter Wirkung und Aufwand",
+      "Screenshots und Bildschirmaufnahmen zu jedem gefundenen Problem",
+      "Einen Vergleich mit drei Mitbewerbern in Ihrer Nähe",
+      "Ein 30-minütiges Gespräch, in dem wir die Ergebnisse mit Ihnen durchgehen"
+    ]
+  },
+  "cta": {
+    "heading": "Möchten Sie sehen, wo Ihr Funnel Kunden verliert?",
+    "button": "Audit anfragen"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "Audit anfragen | Plumbline",
+    "description": "Erzählen Sie uns von Ihrem Unternehmen und fragen Sie ein KI-Audit Ihres Marketing-Funnels an. Wir antworten innerhalb eines Werktags."
+  },
+  "heading": "Audit anfragen",
+  "lead": "Erzählen Sie uns von Ihrem Unternehmen. Wir antworten innerhalb eines Werktags mit ein paar Fragen und einem Festpreis.",
+  "fields": {
+    "name": "Ihr Name",
+    "email": "E-Mail",
+    "business": "Name des Unternehmens",
+    "website": "Website oder Google-Profil",
+    "message": "Was möchten Sie verbessern?"
+  },
+  "hints": {
+    "website": "Ein Link oder eine Domain, zum Beispiel ihrunternehmen.de.",
+    "message": "Zum Beispiel: mehr gebuchte Termine, weniger Ausfälle, mehr Anrufe über die Kartensuche."
+  },
+  "optional": "optional",
+  "submit": "Anfrage senden",
+  "aside": {
+    "heading": "Weitere Kontaktwege",
+    "emailLabel": "E-Mail",
+    "email": "hello@plumbline-audits.example",
+    "hoursLabel": "Erreichbar",
+    "hours": "Montag bis Freitag, 9:00 bis 18:00 Uhr",
+    "replyLabel": "Antwortzeit",
+    "reply": "Innerhalb eines Werktags"
+  },
+  "next": {
+    "heading": "Wie es weitergeht",
+    "steps": [
+      "Wir lesen Ihre Anfrage und sehen uns Ihre Website und Ihr Google-Profil an.",
+      "Wir schicken Ihnen ein paar Fragen und einen Festpreis.",
+      "Nach Ihrer Bestätigung erhalten Sie das Audit innerhalb von fünf Werktagen."
+    ]
+  }
+}

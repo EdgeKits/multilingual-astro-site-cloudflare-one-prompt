@@ -1,0 +1,81 @@
+{
+  "seo": {
+    "title": "Plumbline: descubre dónde tu embudo pierde clientes locales",
+    "description": "Una auditoría con IA de cada paso entre una búsqueda en Google y una cita reservada, con una lista de mejoras ordenada y en lenguaje claro."
+  },
+  "hero": {
+    "heading": "Descubre dónde tu marketing pierde clientes locales.",
+    "lead": "Plumbline audita con IA cada paso entre una búsqueda en Google y una cita reservada. Verás dónde se va la gente, por qué y qué arreglar primero, en lenguaje claro.",
+    "cta": "Solicitar auditoría",
+    "secondary": "Qué revisa la auditoría"
+  },
+  "report": {
+    "caption": "Auditoría de ejemplo: una clínica dental familiar, últimos 30 días",
+    "leak": "{percent} se pierde aquí",
+    "stages": [
+      { "label": "Vieron la clínica en Google", "note": "" },
+      { "label": "Abrieron la web", "note": "El perfil de Google muestra un horario antiguo y no tiene enlace para reservar." },
+      { "label": "Llamaron o enviaron el formulario", "note": "El formulario tiene 9 campos y su botón queda cortado en el móvil." },
+      { "label": "Reservaron una cita", "note": "Las llamadas después de las 17:00 van a un buzón de voz lleno." }
+    ]
+  },
+  "checks": {
+    "heading": "Qué revisa la auditoría",
+    "lead": "Seguimos el camino de un cliente real, desde la primera búsqueda hasta la segunda visita.",
+    "items": [
+      {
+        "title": "Que te encuentren",
+        "body": "Tu perfil de Google Business, tu posición en el mapa para los servicios que vendes, las reseñas y cómo las respondes, y los directorios que tus clientes usan de verdad."
+      },
+      {
+        "title": "El primer clic",
+        "body": "Lo rápido que carga tu web en el móvil y si un visitante entiende en cinco segundos qué ofreces y dónde."
+      },
+      {
+        "title": "El contacto",
+        "body": "Botones de llamada, formularios, chat y mensajería. Probamos cada uno en dispositivos reales y medimos cuánto tarda la respuesta."
+      },
+      {
+        "title": "La reserva",
+        "body": "Dónde el proceso de reserva pide demasiado, esconde los precios o lleva a un callejón sin salida."
+      },
+      {
+        "title": "La vuelta",
+        "body": "Recordatorios, seguimientos y peticiones de reseña que convierten una primera visita en un cliente habitual."
+      }
+    ]
+  },
+  "process": {
+    "heading": "Cómo funciona",
+    "steps": [
+      {
+        "title": "Cuéntanos sobre tu negocio",
+        "body": "Envíanos tu web, tu perfil de Google y los servicios que quieres vender más. Son cinco minutos."
+      },
+      {
+        "title": "Hacemos la auditoría",
+        "body": "Nuestra IA revisa cientos de señales en todo tu embudo. Una persona revisa cada hallazgo antes de que te llegue."
+      },
+      {
+        "title": "Recibes una lista de mejoras ordenada",
+        "body": "En cinco días hábiles: cada fuga con pruebas, las mejoras ordenadas por impacto y esfuerzo, y una llamada de 30 minutos para repasarlas."
+      }
+    ]
+  },
+  "audience": {
+    "heading": "Pensado para negocios que atienden a su barrio",
+    "items": [
+      "Clínicas dentales y médicas",
+      "Fontaneros y electricistas",
+      "Peluquerías y barberías",
+      "Gimnasios y estudios",
+      "Restaurantes y cafeterías",
+      "Despachos de abogados y gestorías"
+    ]
+  },
+  "closing": {
+    "heading": "Una auditoría. Una lista clara de mejoras. Sin cuotas mensuales.",
+    "body": "El informe es tuyo. Haz los cambios tú mismo o pásaselo a tu equipo o a tu agencia.",
+    "cta": "Solicitar auditoría"
+  }
+}

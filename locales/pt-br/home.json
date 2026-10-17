@@ -1,0 +1,81 @@
+{
+  "seo": {
+    "title": "Plumbline: descubra onde seu funil perde clientes locais",
+    "description": "Uma auditoria com IA de cada etapa entre uma busca no Google e um horário agendado, com uma lista de correções em ordem e em linguagem simples."
+  },
+  "hero": {
+    "heading": "Descubra onde seu marketing perde clientes locais.",
+    "lead": "A Plumbline audita com IA cada etapa entre uma busca no Google e um horário agendado. Você vê onde as pessoas desistem, por quê e o que corrigir primeiro, em linguagem simples.",
+    "cta": "Pedir uma auditoria",
+    "secondary": "O que a auditoria verifica"
+  },
+  "report": {
+    "caption": "Auditoria de exemplo: uma clínica odontológica de família, últimos 30 dias",
+    "leak": "{percent} perdidos aqui",
+    "stages": [
+      { "label": "Viram a clínica no Google", "note": "" },
+      { "label": "Abriram o site", "note": "O perfil do Google mostra um horário antigo e não tem link para agendar." },
+      { "label": "Ligaram ou enviaram o formulário", "note": "O formulário tem 9 campos e o botão fica cortado no celular." },
+      { "label": "Agendaram uma consulta", "note": "Ligações depois das 17h caem numa caixa postal lotada." }
+    ]
+  },
+  "checks": {
+    "heading": "O que a auditoria verifica",
+    "lead": "Seguimos o caminho de um cliente real, da primeira busca até a segunda visita.",
+    "items": [
+      {
+        "title": "Ser encontrado",
+        "body": "Seu Perfil da Empresa no Google, sua posição no mapa para os serviços que você vende, as avaliações e como você responde a elas, e os diretórios que seus clientes realmente usam."
+      },
+      {
+        "title": "O primeiro clique",
+        "body": "A velocidade do seu site no celular e se um visitante entende em cinco segundos o que você oferece e onde."
+      },
+      {
+        "title": "O contato",
+        "body": "Botões de ligação, formulários, chat e WhatsApp. Testamos cada um em aparelhos reais e medimos quanto tempo leva a resposta."
+      },
+      {
+        "title": "O agendamento",
+        "body": "Onde o agendamento pede informação demais, esconde os preços ou leva a um beco sem saída."
+      },
+      {
+        "title": "A volta",
+        "body": "Lembretes, retornos e pedidos de avaliação que transformam uma primeira visita em um cliente fiel."
+      }
+    ]
+  },
+  "process": {
+    "heading": "Como funciona",
+    "steps": [
+      {
+        "title": "Conte sobre o seu negócio",
+        "body": "Envie seu site, seu perfil do Google e os serviços que você quer vender mais. Leva cinco minutos."
+      },
+      {
+        "title": "Fazemos a auditoria",
+        "body": "Nossa IA verifica centenas de sinais em todo o seu funil. Uma pessoa revisa cada achado antes de ele chegar até você."
+      },
+      {
+        "title": "Você recebe uma lista de correções em ordem",
+        "body": "Em cinco dias úteis: cada vazamento com evidências, correções ordenadas por impacto e esforço, e uma chamada de 30 minutos para repassar tudo."
+      }
+    ]
+  },
+  "audience": {
+    "heading": "Feito para negócios que atendem o próprio bairro",
+    "items": [
+      "Clínicas odontológicas e médicas",
+      "Encanadores e eletricistas",
+      "Salões e barbearias",
+      "Academias e estúdios",
+      "Restaurantes e cafés",
+      "Escritórios de advocacia e contabilidade"
+    ]
+  },
+  "closing": {
+    "heading": "Uma auditoria. Uma lista clara de correções. Sem mensalidade.",
+    "body": "O relatório é seu. Faça as correções você mesmo ou entregue para sua equipe ou sua agência.",
+    "cta": "Pedir uma auditoria"
+  }
+}

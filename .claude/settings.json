@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "astro-i18n@edgekits": true
+  }
+}

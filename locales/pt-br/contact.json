@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "Pedir uma auditoria | Plumbline",
+    "description": "Conte sobre o seu negócio e peça uma auditoria com IA do seu funil de marketing. Respondemos em um dia útil."
+  },
+  "heading": "Pedir uma auditoria",
+  "lead": "Conte sobre o seu negócio. Respondemos em um dia útil com algumas perguntas e um orçamento fechado.",
+  "fields": {
+    "name": "Seu nome",
+    "email": "E-mail",
+    "business": "Nome do negócio",
+    "website": "Site ou perfil do Google",
+    "message": "O que você gostaria de melhorar?"
+  },
+  "hints": {
+    "website": "Um link ou um domínio, como seunegocio.com.br.",
+    "message": "Por exemplo: mais horários agendados, menos faltas, mais ligações vindas do mapa."
+  },
+  "optional": "opcional",
+  "submit": "Enviar pedido",
+  "aside": {
+    "heading": "Outras formas de falar com a gente",
+    "emailLabel": "E-mail",
+    "email": "hello@plumbline-audits.example",
+    "hoursLabel": "Horário",
+    "hours": "De segunda a sexta, das 9h às 18h",
+    "replyLabel": "Resposta",
+    "reply": "Em até um dia útil"
+  },
+  "next": {
+    "heading": "O que acontece depois",
+    "steps": [
+      "Lemos o seu pedido e olhamos seu site e seu perfil do Google.",
+      "Enviamos algumas perguntas e um orçamento fechado.",
+      "Depois da sua confirmação, a auditoria chega em cinco dias úteis."
+    ]
+  }
+}

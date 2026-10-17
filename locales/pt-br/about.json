@@ -1,0 +1,46 @@
+{
+  "seo": {
+    "title": "Sobre a Plumbline",
+    "description": "A Plumbline audita os funis de marketing de negócios locais com IA e revisão humana, e explica cada achado em linguagem simples."
+  },
+  "heading": "Auditamos funis de negócios que vivem de clientes locais.",
+  "lead": "A maioria dos negócios locais não precisa de mais tráfego. Precisa de menos vazamentos entre a primeira busca e o horário agendado.",
+  "story": [
+    "A Plumbline nasceu dentro de uma pequena agência de marketing. Os donos de negócio pediam mais anúncios e, quando olhávamos de perto, os anúncios quase nunca eram o problema. Ninguém atendia as ligações, os formulários de agendamento quebravam no celular e as boas avaliações ficavam atrás de um perfil com o horário errado.",
+    "Encontrar esses vazamentos à mão levava dias, então criamos uma IA que segue o caminho de um cliente como uma pessoa faria: ela busca, clica, liga, preenche formulários e compara você com os negócios da sua rua. Uma pessoa ainda revisa cada achado, porque uma recomendação errada custa mais do que nenhuma."
+  ],
+  "principles": {
+    "heading": "Como trabalhamos",
+    "items": [
+      {
+        "title": "Linguagem simples",
+        "body": "Cada achado diz o que está errado, quanto isso custa e o que fazer, sem jargão de marketing."
+      },
+      {
+        "title": "Evidência em cada achado",
+        "body": "Capturas de tela, gravações e números. Se não conseguimos mostrar, não entra no relatório."
+      },
+      {
+        "title": "Correções em ordem",
+        "body": "Ordenamos as correções por impacto e esforço, para você saber o que fazer nesta semana e o que pode esperar."
+      },
+      {
+        "title": "Nada para vender depois",
+        "body": "Não vendemos anúncios nem mensalidades. A auditoria é o produto inteiro."
+      }
+    ]
+  },
+  "deliverables": {
+    "heading": "O que você recebe",
+    "items": [
+      "Uma lista de correções em ordem, cada uma com o impacto e o esforço esperados",
+      "Capturas e gravações de tela de cada problema encontrado",
+      "Uma comparação com três concorrentes perto de você",
+      "Uma chamada de 30 minutos para repassar os achados com você"
+    ]
+  },
+  "cta": {
+    "heading": "Quer ver onde o seu funil perde clientes?",
+    "button": "Pedir uma auditoria"
+  }
+}

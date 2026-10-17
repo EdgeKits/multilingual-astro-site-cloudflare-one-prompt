@@ -1,0 +1,13 @@
+---
+// A plumb bob: the line a builder drops to check what is true.
+interface Props {
+  class?: string
+}
+const { class: className } = Astro.props
+---
+
+<svg class={className} viewBox="0 0 20 30" width="20" height="30" aria-hidden="true">
+  <path d="M10 0v9" stroke="currentColor" stroke-width="1.5"></path>
+  <rect x="5" y="9" width="10" height="3" rx="1" fill="currentColor"></rect>
+  <path d="M3 13.5h14L10 29z" fill="var(--marker)"></path>
+</svg>

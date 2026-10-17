@@ -1,0 +1,46 @@
+{
+  "seo": {
+    "title": "Sobre Plumbline",
+    "description": "Plumbline audita los embudos de marketing de negocios locales con IA y revisión humana, y explica cada hallazgo en lenguaje claro."
+  },
+  "heading": "Auditamos embudos de negocios que viven de clientes locales.",
+  "lead": "La mayoría de los negocios locales no necesitan más tráfico. Necesitan menos fugas entre la primera búsqueda y la cita reservada.",
+  "story": [
+    "Plumbline nació dentro de una pequeña agencia de marketing. Los dueños nos pedían más anuncios y, al mirar de cerca, los anuncios casi nunca eran el problema. Nadie contestaba las llamadas, los formularios de reserva fallaban en el móvil y las buenas reseñas quedaban detrás de un perfil con el horario equivocado.",
+    "Encontrar esas fugas a mano llevaba días, así que creamos una IA que sigue el camino de un cliente como lo haría una persona: busca, hace clic, llama, rellena formularios y te compara con los negocios de tu calle. Una persona sigue revisando cada hallazgo, porque una recomendación equivocada cuesta más que ninguna."
+  ],
+  "principles": {
+    "heading": "Cómo trabajamos",
+    "items": [
+      {
+        "title": "Lenguaje claro",
+        "body": "Cada hallazgo dice qué falla, cuánto te cuesta y qué hacer, sin jerga de marketing."
+      },
+      {
+        "title": "Pruebas en cada hallazgo",
+        "body": "Capturas, grabaciones y cifras. Si no podemos mostrarlo, no va en el informe."
+      },
+      {
+        "title": "Mejoras en orden",
+        "body": "Ordenamos las mejoras por impacto y esfuerzo, para que sepas qué hacer esta semana y qué puede esperar."
+      },
+      {
+        "title": "Nada que venderte después",
+        "body": "No vendemos anuncios ni cuotas mensuales. La auditoría es todo el producto."
+      }
+    ]
+  },
+  "deliverables": {
+    "heading": "Qué recibes",
+    "items": [
+      "Una lista de mejoras ordenada, cada una con su impacto y esfuerzo esperados",
+      "Capturas y grabaciones de pantalla de cada problema encontrado",
+      "Una comparación con tres competidores cercanos",
+      "Una llamada de 30 minutos para repasar los hallazgos contigo"
+    ]
+  },
+  "cta": {
+    "heading": "¿Quieres ver dónde pierde clientes tu embudo?",
+    "button": "Solicitar auditoría"
+  }
+}

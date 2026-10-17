@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "plumbline-audits",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Translations for @edgekits/astro-i18n. The id is a local-dev placeholder:
+  // replace it with the id printed by `npx wrangler kv namespace create TRANSLATIONS`.
+  "kv_namespaces": [{ "binding": "TRANSLATIONS", "id": "00000000000000000000000000000000" }],
+  "observability": { "enabled": true },
+}
