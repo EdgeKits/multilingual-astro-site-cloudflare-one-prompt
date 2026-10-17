@@ -1,8 +1,12 @@
 # Plumbline
 
-Marketing site for Plumbline, a company that runs AI audits of marketing funnels for local
-businesses. Astro 7 on Cloudflare Workers, in four languages: `en-us` (default), `es`, `pt-br`
-and `de`.
+A demo site, built in one Claude Code session for the edgekits.dev tutorial
+[Build a Multilingual Astro Site on Cloudflare with One Claude Code Prompt](https://edgekits.dev/en/blog/build-multilingual-astro-site-cloudflare-one-claude-code-prompt/).
+The folder held nothing but the `astro-i18n` plugin from the [EdgeKits marketplace](https://github.com/EdgeKits/skills);
+one prompt produced everything you see here, and the code is committed as the agent left it.
+
+Plumbline is a made-up company that runs AI audits of marketing funnels for local businesses.
+Astro 7 on Cloudflare Workers, in four languages: `en-us` (default), `es`, `pt-br` and `de`.
 
 ## Stack
 
@@ -23,6 +27,12 @@ and `de`.
 | `/en-us/<page>.md`    | Markdown twin of each page (`index`, `about`, `contacts`)   |
 | `/llms.txt`           | Index for AI assistants                                     |
 | `/sitemap.xml`        | Every page in every locale, with hreflang alternates        |
+
+## Agent skill
+
+The repository enables the `astro-i18n@edgekits` plugin in `.claude/settings.json`. After cloning, run
+`/plugin marketplace add EdgeKits/skills` and `/plugin install astro-i18n@edgekits` in Claude Code once;
+the skill then applies to any localization task in this project.
 
 ## Commands
 
